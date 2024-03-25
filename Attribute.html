@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute</title>
+  <style>
+    /* a {
+      color: red;
+    } */
+    /* a[target] {
+      color: red;
+    } */
+    a[target="_blank"] {
+      color: red;
+    }
+    /* p[title] {
+      color: red;
+    } */
+    /* p[title~="belajar"] {
+      color: red;
+    } */
+    /* p[title|="belajar"] {
+      color: red;
+    } */
+    p[title*="belajar"] {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <a href="" target="_blank">contoh1</a>
+  <a href="">contoh1</a>
+  <a href="" target="_self">contoh2</a>
+  <a href="">contoh1</a>
+
+  <p title="belajar Pemograman">Ini Dipilih</p>
+  <p title="belajarPemograman">Ini Tidak Dipilih</p>
+  <p title="belajar-Pemograman">Ini Tidak Dipilih</p>
+</body>
+</html>
